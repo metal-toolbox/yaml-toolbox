@@ -16,7 +16,7 @@ RUN go install github.com/controlplaneio/kubesec/v2@latest \
   && echo 'nobody:x:65534:65534:nobody:/:' > /user/passwd \
   && echo 'nobody:x:65534:' > /user/group
 
-FROM alpine:3.15
+FROM alpine:3.16
 
 WORKDIR /src
 
