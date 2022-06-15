@@ -27,7 +27,7 @@ COPY --chown=nobody --from=builder /usr/bin/helm /usr/bin/helm
 COPY --chown=nobody --from=builder /go/bin/kubesec /usr/bin/kubesec
 
 COPY --chown=nobody --from=k8s.gcr.io/kustomize/kustomize:v4.5.5 /app/kustomize /usr/bin/kustomize
-COPY --chown=nobody --from=garethr/kubeval:v0.16.1 /kubeval /usr/bin/kubeval
+COPY --chown=nobody --from=instrumenta/kubeval:v0.16.1 /kubeval /usr/bin/kubeval
 COPY --chown=nobody --from=zegl/kube-score:v1.14.0 /kube-score /usr/bin/kube-score
 
 USER nobody:nobody
