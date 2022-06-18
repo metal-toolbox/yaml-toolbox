@@ -11,4 +11,4 @@ jobs:
     with:
       name: yaml-toolbox
       tag: latest
-      dockerfile_path: images/Dockerfile
+      dockerfile_path: .
