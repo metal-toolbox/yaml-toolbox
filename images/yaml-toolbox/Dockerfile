@@ -53,3 +53,4 @@ COPY --chown=nobody --from=zegl/kube-score:v1.14.0 /kube-score /usr/bin/kube-sco
 USER nobody:nobody
 
 CMD ["/bin/sh"]
+ENTRYPOINT ["/usr/bin"]
