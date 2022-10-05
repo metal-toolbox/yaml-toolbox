@@ -2,8 +2,8 @@ name: Release
 
 on:
   push:
-    tags:
-      - v**
+#    tags:
+#      - v**
 
 jobs:
   auto-release:
@@ -25,4 +25,4 @@ jobs:
     with:
       name: yaml-toolbox
       tag: ${GITHUB_REF_NAME}
-      dockerfile_path: .
+      dockerfile_path: images/yaml-toolbox/Dockerfile
