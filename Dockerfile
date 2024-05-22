@@ -34,7 +34,7 @@ RUN mkdir /tmp/kubesec \
   && tar -xzf /tmp/kubesec/kubesec.tar.gz -C /tmp/kubesec \
   && chmod +x /tmp/kubesec/kubesec
 
-FROM alpine:3.16
+FROM alpine:3.20
 
 WORKDIR /src
 
