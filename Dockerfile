@@ -48,7 +48,7 @@ COPY --chown=nobody --from=builder /tmp/kube-linter/kube-linter /usr/bin/kube-li
 
 COPY --chown=nobody --from=k8s.gcr.io/kustomize/kustomize:v4.5.5 /app/kustomize /usr/bin/kustomize
 COPY --chown=nobody --from=ghcr.io/yannh/kubeconform:v0.4.14 /kubeconform /usr/bin/kubeconform
-COPY --chown=nobody --from=zegl/kube-score:v1.14.0 /kube-score /usr/bin/kube-score
+COPY --chown=nobody --from=zegl/kube-score:v1.19.0 /kube-score /usr/bin/kube-score
 
 USER nobody:nobody
 
